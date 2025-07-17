@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Code Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>QR Code Scanner</h1>
+
+  <input type="file" accept="image/*" id="upload" />
+  <p>Or use the context menu to select an area on the page to scan QR codes</p>
+
+  <div id="resultBox" style="display:none;">
+    <p id="resultText"></p>
+    <button id="copyBtn">Copy</button>
+    <a id="linkBtn" href="#" target="_blank" style="display:none;">Open Link</a>
+  </div>
+
+  <script src="jsQR.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
